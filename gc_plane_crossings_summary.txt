@@ -1,0 +1,24 @@
+GLOBULAR CLUSTER GALACTIC PLANE CROSSINGS NEAR THE SUN
+Source: Prokhorov et al. 2008 (arXiv:0811.3106), FE potential
+Impact points = where each cluster crossed the galactic plane (z=0),
+projected to present-day disk position.
+
+CLUSTER | CROSSING (Myr ago) | DIST (kpc) | 90% CONTOUR (deg) | DIST UNC | INCL (deg) | GAL LON | GAL LAT | NOTES
+NGC 6397 | 3.7 +/- 0.2 | 2.6 | 3 | +/-12% | ~52 | 338.2 | -12.0 | tightest; Ara; core-collapsed
+NGC 3201 | 5.5 +/- 0.4 | 2.5 | 7 | +/-22% | ~78 | 277.2 | +8.6 | retrograde; Vela
+NGC 6838 (M71) | 15.6 +/- 0.5 | 4.5 | 6 | +/-20% | ~15 | 56.7 | -4.6 | low inclination; Sagitta
+NGC 6752 | 29.4 +/- 1.7 | 2.8 | 12 | +/-25% | ~60 | 341.2 | -25.6 | Pavo
+NGC 1851 | 43.2 +/- 8.0 | 2.5 | 14 | +/-30% | ~62 | 244.5 | -35.0 | Columba
+NGC 104 (47 Tuc) | 48.8 +/- 2.1 | 2.2 | 16 | +/-30% | ~34 | 305.9 | -44.9 | Tucana
+
+RULED-OUT REMNANT CANDIDATE:
+NGC 6231 (open cluster): l=343.46, b=+1.186 — 0.6 kpc outside NGC 6397's 90% contour. Age 3-10 Myr consistent but position incompatible.
+
+SEARCH CORRIDOR: galactic plane strip |b| < 5 deg, galactic longitude roughly 220-360 deg (the span covered by the six 90% contours). Best bets for young (<10 Myr) triggered star formation: NGC 6397 and NGC 3201 corridors — pre-main-sequence stars bright in IR (SPHEREx) and X-ray (eROSITA).
+
+INCLINATION NOTES:
+- High-inclination clusters (50-80 deg) cross the plane fast and at higher |z| velocity; their impact footprints are smaller on sky.
+- Low-inclination M71 (15 deg) spends more time near the plane; larger footprint, more mixing with disk population.
+- Retrograde NGC 3201's crossing geometry differs: relative velocity to disk gas is higher, shock compression stronger per Levy 2000.
+
+CAVEATS: Contours dominated by Galactic potential model uncertainty (not just astrometry). Barred time-varying potentials (OrbIT 2025, arXiv:2512.06079) would shift and broaden these footprints further. No confirmed ISM or stellar remnant identified to date.
