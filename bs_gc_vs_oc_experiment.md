@@ -1,5 +1,5 @@
 # Comparative Experiment: Blue Stragglers in Globular vs Open Clusters
-Date: 2026-10-25
+Date: 2026-10-25 (updated with TESS asteroseismology diagnostic)
 
 ## Motivation
 Two competing formation channels: direct stellar collisions (dense cores) and binary mass transfer (loose environments). User hypothesis: proper motion studies show velocity dispersions too low for collision rates to dominate, and mass transfer requires Roche-lobe contact at only a few stellar radii — a much larger cross-section. Yet RV surveys find only 20-40% of BSs are binaries. Chemical signatures (C/O enrichment) support accretion in some cases. This experiment tests whether both channels are weak explanations by comparing BS populations across the density spectrum.
@@ -19,12 +19,13 @@ Two competing formation channels: direct stellar collisions (dense cores) and bi
 ### Open Clusters (sparse, young, metal-rich)
 - NGC 2682 (M67): ~4 Gyr, solar metallicity, well-studied BS population, known binary BSs
 - NGC 188: ~7 Gyr, old open cluster, BS population studied
-- NGC 6819: ~2.5 Gyr, BS population with Gaia membership
+- NGC 6819: ~2.5 Gyr, BS population with Gaia membership; TESS CVZ target
 - NGC 7789: ~1.6 Gyr, large BS sample
 - Berkeley 39: ~6 Gyr, sparse, low-density comparison
 - Trumpler 5: old, sparse
+- NGC 6791: ~8 Gyr, TESS CVZ target, sparse enough for clean BS light curves
 - Density range: 1 to 10^2 solar masses per cubic parsec
-- Age: 0.5 to 7 Gyr
+- Age: 0.5 to 8 Gyr
 - Metallicity: near solar to slightly subsolar
 
 ## Key Diagnostics
@@ -67,6 +68,15 @@ Two competing formation channels: direct stellar collisions (dense cores) and bi
 - OC: BSs are young enough that chromospheric activity is expected regardless of formation channel — X-ray is a weaker discriminator here
 - Diagnostic: if GC BS X-ray excess correlates with C/O enrichment (accretors) but not with rotation (collision products), supports mass transfer. If excess correlates with core proximity, supports collisions.
 
+### 7. TESS Asteroseismology (NEW)
+- Method: oscillation frequency analysis of BS light curves from TESS 2-min cadence and 30-min FFIs
+- Physical basis: a collision product is thoroughly mixed — nearly uniform composition throughout — while a mass-transfer accretor retains a layered structure with fresh hydrogen envelope over a processed core. These interior differences shift p-mode and g-mode frequencies measurably.
+- GC limitation: 21 arcsec/pixel scale means core crowding destroys individual BS signals; only outskirts BSs in loose clusters like NGC 4372 or M4 might work
+- OC advantage: NGC 6791 and NGC 6819 in TESS continuous viewing zones; sparse fields give clean BS light curves
+- Diagnostic: if OC BSs show mixed-interior frequency signatures (collision-like) alongside chemically enriched ones (transfer-like), both channels confirmed in the same environment. If all OC BS frequencies indicate unmixed layered interiors, mass transfer dominates in sparse clusters — strengthening the density-dependent channel picture.
+- Null result meaning: if OC BS frequencies are indistinguishable from normal main-sequence stars of the same mass, either BSs are not genuinely rejuvenated (contradicts CMD position) or asteroseismic sensitivity to mixing is lower than models predict — itself a falsifiable outcome.
+- Cross-check: compare asteroseismic mixing diagnostics against C/O abundance patterns from spectroscopy on the same stars for validation
+
 ## Statistical Framework
 1. Build uniform BS catalogs for all target clusters using identical selection criteria (CMD position above turnoff, UV excess where available)
 2. Compute BS frequency, binary fraction, rotation distribution, abundance patterns, radial profiles per cluster
@@ -74,13 +84,17 @@ Two competing formation channels: direct stellar collisions (dense cores) and bi
 4. Test for regime transitions: is there a density threshold where collision signatures appear?
 5. Bayesian model comparison: collision-only, mass-transfer-only, mixed, and null (third channel) models
 6. Cross-validate with independent datasets (different instruments, different clusters)
+7. Asteroseismic subset: restrict to OCs in TESS CVZs; compare frequency-derived mixing profiles against spectroscopic C/O on overlapping stars
 
 ## Falsifiability
 - If both GC and OC BS populations show identical binary fractions, rotation, and chemistry despite 4 orders of magnitude density difference → both collision and mass-transfer channels are weak; a third mechanism (e.g., Kozai-driven triples, stellar mergers in hierarchical systems) may dominate
 - If GC BSs are chemically enriched but OC BSs are not → environment-dependent channel switching confirmed
 - If OC BSs are fast rotators and GC BSs are slow → age-dependent braking masks collision signatures in GCs; collision channel may be underestimated
+- If TESS OC BS frequencies show mixed interiors while spectroscopy shows C/O enrichment → both channels operate simultaneously in sparse environments; the Nature anti-correlation may reflect BS destruction, not formation suppression
+- If TESS OC BS frequencies match normal MS stars → asteroseismic channel discrimination fails or BSs are not what CMD position suggests
 
 ## Open Questions
 - Do triple systems (Kozai-Lidov cycles) produce BSs without requiring close binaries or collisions? Testable via RV monitoring for tertiary companions.
-- Is the Nature 2026 anti-correlation an artifact of BS destruction in dense cores (collisions destroying prior BSs)? Testable via BS age distributions.
-- Can BS asteroseismology (oscillation frequencies) distinguish collision products (mixed interiors) from mass-transfer accretors (unmixed)? Kepler/TESS data on OC BSs may enable this.
+- Is the Nature 2026 anti-correlation an artifact of BS destruction in dense cores (collisions destroying prior BSs)? Testable via BS age distributions and asteroseismic interior ages.
+- Can BS asteroseismology distinguish collision products (mixed interiors) from mass-transfer accretors (unmixed)? Kepler/TESS data on OC BSs may enable this — primary test of this updated experiment.
+- Does the 21-arcsec TESS pixel scale permit any GC BS asteroseismology in outskirts, or is the OC-only restriction absolute?
